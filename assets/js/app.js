@@ -16,7 +16,7 @@ var inpEmail = document.getElementById("inp-email");
 var inpCity = document.getElementById("inp-city");
 
 
-var regPhone = /\d{9}/;
+var regPhone = /\d{7,9}/;
 var regFirstCapLet = /^[A-Z][a-z]+$/;
 var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
