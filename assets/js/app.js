@@ -94,6 +94,7 @@ window.addEventListener("load", function(){
       for (var i = 0; i < allInpData.length; i++) {
         if(allInpData[i].value.trim().length == 0){
           allInpData[i].style.borderBottom = "2px solid #FEA4AD";
+          allInpData[i].nextElementSibling.style.display="block";
         }else if(inpPhoneNumber.value != "" || inpName.value != "" || inpEmail.value != "" || inpCity.value != ""){
           if(allInpData[i].style.borderBottom == "2px solid #FEA4AD"){
             allInpData[i].style.borderBottom = "2px solid #FEA4AD";
