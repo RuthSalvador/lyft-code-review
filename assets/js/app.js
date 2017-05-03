@@ -9,6 +9,7 @@ var logo = document.getElementById("logo");
 var navSignUp = document.getElementById("nav-sign-up");
 var navLogIn = document.getElementById("nav-log-in");
 
+
 var elemFormNone = document.getElementsByName("form-none");
 var inpPhoneNumber = document.getElementById("inp-phone");
 var inpName = document.getElementById("inp-name");
@@ -40,16 +41,25 @@ window.addEventListener("load", function(){
 
   window.addEventListener("scroll", function(){
     var currentScroll = window.pageYOffset || document.body.scrollTop;
+    var drive = document.getElementById("drive");
+    var explore = document.getElementById("explore");
+    var help = document.getElementById("help");
     if(currentScroll > 1){
       document.getElementById("header").className = "header-down-scroll";
       logo.src = "assets/image/logo-pink.png";
+      help.style.color = "#CCC3E2";
+      drive.style.color = "#CCC3E2";
+      explore.style.color = "#CCC3E2";
       navLogIn.className = "c-gray";
       navSignUp.className= "show-sign-up";
     }else{
       document.getElementById("header").className = "header-up-scroll";
       logo.src = "assets/image/logo-white.png";
       navSignUp.className= "none-sign-up";
-      navLogIn.className = "c-white c-pink";
+      navLogIn.className = "c-white";
+      help.style.color = "white";
+      drive.style.color = "white";
+      explore.style.color = "white";
     }
 
   }, false);
