@@ -15,6 +15,7 @@ var inpName = document.getElementById("inp-name");
 var inpEmail = document.getElementById("inp-email");
 var inpCity = document.getElementById("inp-city");
 
+
 var regPhone = /^[9]\d{8}$/;
 var regFirstCapLet = /^[A-Z][a-z]+$/;
 var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -25,9 +26,11 @@ function validateEachInput(regEx){
     var elemParent = input.parentElement;
     if(!regEx.test(input.value)){
       input.style.borderBottom = "2px solid #FEA4AD";
+      input.nextElementSibling.style.display="block";
       // input:after.style.content = "error";
     }else{
       input.style.borderBottom = "2px solid #CCC3E2";
+      input.nextElementSibling.style.display="none";
     }
 }
 
