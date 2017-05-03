@@ -111,7 +111,11 @@ header{
 }
 
 .none-sign-up{
-  display: none;
+  visibility: hidden;
+}
+
+.show-sign-up {
+  visibility: visible;
 }
 
 /*contenedor de formulario*/
