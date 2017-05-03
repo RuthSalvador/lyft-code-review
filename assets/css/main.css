@@ -71,8 +71,15 @@ header{
   display: flex;
   flex-wrap: nowrap;
 }
+.logo{
+  margin-left: -7%;
+}
+.menu{
+  margin-right: -7%;
+}
  .menu a{
   margin: 0.5rem;
+  color: white;
   text-decoration: none;
 }
 
@@ -104,7 +111,12 @@ header{
 .c-white{
   color: white;
 }
-
+.nav-log-in{
+  border:white!important;
+}
+.gray{
+  color: #CCC3E2;
+}
 .c-gray{
   color: #CCC3E2;
   border: 2px solid #CCC3E2;
