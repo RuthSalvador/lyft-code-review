@@ -120,13 +120,16 @@ header{
 }
 
 #video-inicio{
-  position: fixed;
   min-width: 100%;
   min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: -100;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  top:10%;
+  transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
 }
 
 /*sec-phone  2da seccion*/
