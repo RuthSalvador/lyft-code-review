@@ -49,11 +49,9 @@ header{
 }
 .header-up-scroll{
   background-color: : none;
-  color: white;
 }
 
 .header-down-scroll{
-  color: black;
   background-color: white;
 }
 
@@ -72,11 +70,12 @@ header{
   flex-wrap: nowrap;
 }
 .logo{
-  margin-left: -7%;
+  margin-left: -10%;
 }
 .menu{
-  margin-right: -7%;
+  margin-right: -10%;
 }
+
  .menu a{
   margin: 0.5rem;
   color: white;
@@ -94,7 +93,6 @@ header{
   cursor: pointer;
 }
 
-
 .menu button:hover{
   background-color: rgb(233, 0, 182);
 }
@@ -111,15 +109,10 @@ header{
 .c-white{
   color: white;
 }
-.nav-log-in{
-  border:white!important;
-}
-.gray{
-  color: #CCC3E2;
-}
-.c-gray{
-  color: #CCC3E2;
-  border: 2px solid #CCC3E2;
+
+.c-blue{
+  color: #333447;
+  border: 1px solid #333447;
 }
 
 .none-sign-up{

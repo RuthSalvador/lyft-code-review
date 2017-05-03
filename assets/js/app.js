@@ -4,23 +4,18 @@ function Person(celular, nombre, correo, ciudad){
   this.correo = correo;
   this.ciudad = ciudad;
 }
+//Inicio de código aquí
 
-var logo = document.getElementById("logo");
-var navSignUp = document.getElementById("nav-sign-up");
-var navLogIn = document.getElementById("nav-log-in");
-
-
+//variables de form
 var elemFormNone = document.getElementsByName("form-none");
 var inpPhoneNumber = document.getElementById("inp-phone");
 var inpName = document.getElementById("inp-name");
 var inpEmail = document.getElementById("inp-email");
 var inpCity = document.getElementById("inp-city");
-
-
+//regex
 var regPhone = /\d{7,9}/;
 var regFirstCapLet = /^[A-Z][a-z]+$/;
 var emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-
 
 function validateEachInput(regEx){
     var input = event.target;
@@ -28,29 +23,29 @@ function validateEachInput(regEx){
     if(!regEx.test(input.value)){
       input.style.borderBottom = "2px solid #FEA4AD";
       input.nextElementSibling.style.display="block";
-      // input:after.style.content = "error";
     }else{
       input.style.borderBottom = "2px solid #CCC3E2";
       input.nextElementSibling.style.display="none";
     }
 }
 
-
 window.addEventListener("load", function(){
-  var lastScrollTop = 0;
-
   window.addEventListener("scroll", function(){
     var currentScroll = window.pageYOffset || document.body.scrollTop;
+    // var opc menu
     var drive = document.getElementById("drive");
     var explore = document.getElementById("explore");
     var help = document.getElementById("help");
+    var logo = document.getElementById("logo");
+    var navSignUp = document.getElementById("nav-sign-up");
+    var navLogIn = document.getElementById("nav-log-in");
     if(currentScroll > 1){
       document.getElementById("header").className = "header-down-scroll";
       logo.src = "assets/image/logo-pink.png";
-      help.style.color = "#CCC3E2";
-      drive.style.color = "#CCC3E2";
-      explore.style.color = "#CCC3E2";
-      navLogIn.className = "c-gray";
+      help.style.color = "#333447";
+      drive.style.color = "#333447";
+      explore.style.color = "#333447";
+      navLogIn.className = "c-blue";
       navSignUp.className= "show-sign-up";
     }else{
       document.getElementById("header").className = "header-up-scroll";
@@ -86,6 +81,7 @@ window.addEventListener("load", function(){
     validateEachInput(regFirstCapLet);
   });
 
+//Inicio local storage
   var allPerson=[];
   if(!localStorage.getItem("allPerson")){
     localStorage.setItem("allPerson",JSON.stringify(allPerson));
