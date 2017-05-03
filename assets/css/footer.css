@@ -29,7 +29,7 @@ li{
 }
 
 .footer a:hover{
-  color: #FF00BF;
+  text-decoration: underline;
 }
 
 .icon{
