@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("form.css");
+@import url("footer.css");
+@import url("../icon/style.css");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.p-relative{
+  position: relative;
+}
+
+.p-abs{
+  position: absolute;
+}
+
+.none{
+  display: none;
+}
+
+.block{
+  display: block;
+}
+
+.up-case{
+  text-transform: uppercase;
+}
+
+button, input{
+  outline: none;
+}
+
+header{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+  height: 5rem;
+  z-index: 800;
+  transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+.header-up-scroll{
+  background-color: : none;
+  color: white;
+}
+
+.header-down-scroll{
+  color: black;
+  background-color: white;
+}
+
+.nav-header, .sec-phone, .amplify-ride, .june, .good-thing{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+}
+
+.logo, .menu{
+  max-width: 80%;
+  height: 40%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+ .menu a{
+  margin: 0.5rem;
+  text-decoration: none;
+}
+
+.menu a:hover{
+  color: #FF00BF;
+}
+
+.menu button{
+  background-color: transparent;
+  border-radius: 0.5rem;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+}
+
+
+.menu button:hover{
+  background-color: rgb(233, 0, 182);
+}
+
+.c-pink{
+  border: 2px solid #FF00BF;
+  color: #FF00BF;
+}
+
+.c-black{
+  color: black;
+}
+
+.c-white{
+  color: white;
+}
+
+.c-gray{
+  color: #CCC3E2;
+  border: 2px solid #CCC3E2;
+}
+
+.none-sign-up{
+  display: none;
+}
+
+.first-content{
+  height: 39rem;
+}
+
+#video-inicio{
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+}
+
+/*sec-phone*/
+.sec-phone{
+  background-image: linear-gradient(#76278f, #2B1E66);
+}
+.left, .right{
+  color: white;
+  width: 40%;
+}
+
+.sec-phone img{
+  width: 95%;
+}
+
+.happy, .serious, .ride{
+  width: 80%;
+  margin: 5rem auto;
+}
+
+/*sec video*/
+
+.text{
+  width: 30%;
+  padding: 3rem;
+  background-color: white;
+  height: 24rem;
+}
+
+.video{
+  width: 70%;
+  height: 24rem;
+}
+
+.youtube-player{
+  width: 100%;
+  height: 100%
+}

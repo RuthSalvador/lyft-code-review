@@ -1,0 +1,47 @@
+.sec-form-sign-up{
+  background-color: white;
+  width: 40%;
+  right: 0;
+  top: 5rem;
+  color: #31107D;
+}
+
+.contact-form{
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.sec-form-sign-up h1{
+  font-size: 2.5rem;
+}
+
+.sec-form-sign-up a {
+  color: #B0AFB9;
+}
+
+.input-box{
+  margin: 2rem 0;
+}
+
+.input-box input{
+  border: none;
+  border-bottom: 2px solid #CCC3E2;
+  width: 90%;
+}
+
+.input-box button{
+  background-color: #E900B5;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.7rem;
+  margin-right: 2rem;
+}
+
+.input-box input, .input-box button{
+  font-size: 1rem;
+}
+
+.input-box p{
+  font-size: 0.6rem;
+  margin: 0.8rem 0;
+}
