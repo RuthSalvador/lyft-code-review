@@ -37,4 +37,14 @@ li{
   width: 34%;
   margin: auto;
   text-align: center;
+  padding: 15px;
+}
+.icon span {
+  margin: 10% 15px;
+}
+.icon hr {
+  margin: 10px;
+}
+.icon p {
+  margin: 10px auto;
 }

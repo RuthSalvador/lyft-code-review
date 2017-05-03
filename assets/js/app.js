@@ -40,18 +40,18 @@ window.addEventListener("load", function(){
 
   window.addEventListener("scroll", function(){
     var currentScroll = window.pageYOffset || document.body.scrollTop;
-    if(currentScroll > lastScrollTop){
+    if(currentScroll > 1){
       document.getElementById("header").className = "header-down-scroll";
       logo.src = "assets/image/logo-pink.png";
       navLogIn.className = "c-gray";
-      navSignUp.style.display = "inline";
-    }else if (currentScroll <=3){
+      navSignUp.className= "show-sign-up";
+    }else{
       document.getElementById("header").className = "header-up-scroll";
       logo.src = "assets/image/logo-white.png";
-      navSignUp.style.display = "none";
+      navSignUp.className= "none-sign-up";
       navLogIn.className = "c-white c-pink";
     }
-    lastScrollTop = currentScroll;
+
   }, false);
 
   inpPhoneNumber.addEventListener("focus", function(){
