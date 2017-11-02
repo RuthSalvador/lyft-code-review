@@ -1,4 +1,4 @@
-![Lyft](assets/image/logo-pink.png)
+![Lyft](http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c525.png)
 
 # Code Review | Lyft
 
